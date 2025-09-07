@@ -1,0 +1,46 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body{
+    background: linear-gradient(to left, rgb(235, 112, 112), rgb(238, 238, 124));    
+}
+
+.container{
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    min-height: 100vh;
+    grid-template-columns: repeat(4, 100px);
+    grid-template-rows: minmax(120px, auto) repeat(5, 100px);
+}
+
+button{
+    cursor: pointer;
+    font-size: 25px; 
+}
+
+button:hover {
+    background-color:bisque;
+}
+
+.clearButton, .deleteButton{
+    grid-column: span 2;
+}
+
+.displayOutput {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-around;
+    flex-direction: column;
+    grid-column: 1/-1;
+    color: white;
+    background-color:black;
+    font-size: 25px;
+    padding: 20px;
+    word-wrap: break-word;
+    word-break: break-all;
+}
+
